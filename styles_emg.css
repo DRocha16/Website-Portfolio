@@ -1,0 +1,103 @@
+
+body{
+    background-color: #FBFBFB;
+}
+
+#parte_cima{
+    background-color:  rgb(240,244,244);
+}
+
+#parte_baixo{
+    background-color: #FBFBFB;
+}
+
+
+#tudo{
+    /*height:80%;
+    width:100%;*/
+    margin: auto;
+}
+
+
+#nome{
+  text-align:center;
+  font-family: 'Questrial';font-size: 22px;
+	font-size: 26px;
+  letter-spacing: 0.1em;
+  /*word-spacing: 0.3em;*/
+	color: black;
+
+  margin:0
+}
+
+#subtitulo{
+  text-align:center;
+  font-family: 'Questrial';
+	font-size: 52px;
+  /*letter-spacing: 0.1em;*/
+	color: black;
+	font-weight: bold;
+  margin:0;
+}
+
+#titulo_texto {
+  text-align:center;
+  font-family: 'Questrial';
+  font-size: 22px;
+    color: black;
+    margin:0;
+    font-weight: bold;
+}
+
+#texto {
+  text-align:center;
+  font-family: 'Questrial';
+  font-size: 15px;
+   color: black;
+   margin:1%;
+   margin-right: 4%;
+   margin-left: 4%;
+   text-align: justify;
+ text-justify: inter-word;
+ text-indent:10%;
+}
+
+
+#data {
+  font-family: 'Questrial';
+  font-size: 16px;
+  /*font-weight: bold;*/
+  color: black;
+  font-size:18px;
+}
+
+#link {
+  font-family: 'Questrial';
+  font-size: 16px;
+  /*font-weight: bold;*/
+  color: rgb(37, 150, 190);
+  font-size:18px;
+}
+
+
+body,html{padding:0; margin:0;height:100%;width:100%;}
+
+#top{
+  /*background-color:red;*/
+  height:15%;
+}
+
+#bottom{
+  display: flex;
+  flex-wrap:wrap;
+  height:85%;
+  /*background-color:blue;*/
+}
+
+
+#bottom > *{
+  flex-basis: auto;
+  width:50%;
+  box-sizing:border-box;
+  /* border:1px solid black; */
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title style="color:blue"> EMG Models for Gesture Prediciton </title>
+  <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href ="styles_emg.css" rel = "stylesheet" type = "text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div id="parte_cima"   class="jumbotron text-center">
+  <h1 id="nome"> DENIS ROCHA </h1>
+  <p id="subtitulo"> Electromiography Models For Gesture Prediction  </p>
+</div>
+
+<div id="parte_baixo"  class="container">
+  <div class="row">
+
+
+    <!-- 1 -->
+    <div class="col-sm-6">
+        <img src="myo_armband.jpg" alt="png" style="width:100%;height:100%;">
+    </div>
+    <div class="col-sm-6">
+      <h3  id="titulo_texto" > The Data </h3>
+      <br>
+      <p  id="texto"> The data for this project was generated using a MYO armband, that has 8 sensors placed in the skin. </p>
+      <p  id="texto"> Four classes of motion were attempted to be predicted by the produced data. The gesture classes were : rock - 0, scissors - 1, paper - 2, ok - 3. </p>
+      <p  id="texto"> These data was recorded at a sampling frequency of 200 Hz, during a record time of 40ms. </p>
+
+      <p  id="texto"> The dataset was collected from Kaggle: <a href="https://www.kaggle.com/kyr7plus/emg-4" id="link"> https://www.kaggle.com/kyr7plus/emg-4 </a>
+      </p>
+    </div>
+
+
+
+
+      <div class="row">
+    <!-- 3 -->
+    <div class="col-lg-6">
+      <br>
+      <p id="titulo_texto" > Model Exploration </p>
+      <p id="texto" > After the pre-processing of the data, the search for a meaningful model began. </p>
+      <p id="texto" > Three models were generated using Orange's rapid model testing GUI. With the following results:  </p>
+      <p id="texto" > - SVM: AUC of 0.605, Precision of 0.723 months and Recall of 0.343  </p>
+      <p id="texto" > - Neural Network: AUC of 0.995, Precision of 0.959 months and Recall of 0.959  </p>
+      <p id="texto" > - Naive Bayes :  AUC of 0.987, Precision of 0.926 months and Recall of 0.925   </p>
+      <p id="texto" > So, the best models were the ones using Neural Networks and the ones using the Naive Bayes approach. The train dataset had 6130 labeled examples and the test dataset had 2626 unlabeled examples , a division of 70%/30%.   </p>
+
+
+    </div>
+
+
+    <!-- 4 -->
+    <div class="col-lg-6">
+        <img src="model_emg-ed.png" alt="png" style="width:100%;height:100%;">
+      </div>
+
+  </div>
+    </div>
+
+  </div>
+
+
+<div style="text-align:center;">
+			<br>
+			<br>
+			<a href="index.html" id="link"> &#x2039; Back </a>
+
+			<br>
+			<br>
+			<label id="data" for="works"> &copy2021 </label>
+</div>
+</body>
+</html>

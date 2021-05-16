@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title style="color:blue"> Denis Rocha </title>
+  <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href ="styles_rsna.css" rel = "stylesheet" type = "text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div id="parte_cima"   class="jumbotron text-center">
+  <h1 id="nome"> DENIS ROCHA </h1>
+  <p id="subtitulo">RSNA Bone Age</p>
+</div>
+
+<div id="parte_baixo"  class="container">
+  	<div class="row">
+				<!-- 1 -->
+			  <div class="col-lg-6"> <!-- gif/imagem do GUI a funcionar  -->
+					<img src="video rsna comprimido sem som cortado GIF.gif" alt="gif" style="width:100%;height:100%;">
+				</div>
+
+				<!-- 2 -->
+			  <div class="col-lg-6">
+					<p  id="titulo_texto" > Why? </p>
+					<p  id="texto"> The conventional method that a doctor has to assess one's age is to look into his bones (frequently the hand's bones) and use his memory of last diagnostics and of studied cases to give a prediction of the patient's bone age.  </p>
+					<p  id="texto"> So, this method is based on comparation and search for specific features in the x ray images of the patient's hand.
+ Which makes this problem perfectly suited for a computer using Machine Learning and Image Processing methods. </p>
+				 <p  id="texto"> Hence, starting  this project was a way of being able to try to solve a problem related to the field of medicine, but also and principally as a way to learn about the field of machine learning by doing. </p>
+				</div>
+			</div>
+
+  		<div class="row">
+
+
+				<!-- 3 -->
+		    <div class="col-lg-6">
+					<br>
+					<p id="titulo_texto" > Graphical User Interface & Image Processing </p>
+					<p id="texto" > The goal of this GUI was to be a tool to help in the process of finding the best image processing pipeline for a dataset of X-ray hand's images. </p>
+
+					<p id="texto" > This work, specifically, was designed to segment and isolate the wrist bones, in order to extract meaningful features from there to feed them into a machine learning model later on.
+				  	</p>
+					<p id="texto" >	The images used were obtained from the RSNA Bone Age contest. This contest aimed to correctly identify the age of a child from an X-ray of their hand. The whole dataset can be accessed in Kaggle: https://www.kaggle.com/kmader/rsna-bone-age
+ 			 			</p>
+
+						<p id="texto" >	PyQt5 and Qt Designer were used to create the GUI. All image processing methods were created using Scikit-Image
+						Other packages such as Matplotlib, NumPy, SciPy and Pandas were also used. It was developed as an work for an image processing course.
+						</p>
+
+					<p id="texto" >	 This GUI was developed as an assignment for an image processing course. Several methods of image processing such as threshold filtering, contrast enhancements region-based segmentation and some created by myself were used. </p>
+
+				</div>
+
+				<!-- 4 -->
+				<div class="col-lg-6"> <!-- gif/imagem do GUI a processar  -->
+						<img src="video rsna run GIF.gif" alt="gif" style="width:100%;height:100%;">
+				</div>
+
+			</div>
+
+		  <div class="row">
+
+				<!-- 5 -->
+		  	<div class="col-lg-6"> <!-- gif/imagem dos resultados regressao/NN  -->
+						<img src="gif_nn.gif" alt="gif" style="width:100%;height:100%;">
+				</div>
+
+				<!-- 6 -->
+  		 	<div class="col-lg-6">
+					<br>
+					<p  id="titulo_texto"  > Lasso Regression & NNs </p>
+					<p  id="texto"> In the image processing phase, the visual information on the images was transformed into numerical features. Various methods were used such as GLCM features, corner features (Harris Corner Detector), CENSURE features, the percentage of non black pixels and some methods created by myself.  </p>
+					<p  id="texto"> Then, this dataset was used to train a model. A more classical approach was to use Lasso regression, the other approach was using a neural network (made predominantly with ReLu as activation function). </p>
+					<p  id="texto"> The accuracy of the models were: </p>
+					<p  id="texto" > - Lasso Regression: MAE of 23.4 months and RMSE of 37.1 months  </p>
+					<p  id="texto"> - Neural Network: MAE of 18.7 months and RMSE of 20.5 months  </p>
+					<p  id="texto"> These models are still work on progress and these values, whenever I learn somethinf new useful to this I try to implement it. </p>
+
+
+				</div>
+			</div>
+
+		</div>
+
+			<div style="text-align:center;">
+			<br>
+			<br>
+			<a href="index.html" id="link"> &#x2039; Back </a>
+
+			<br>
+			<br>
+			<label id="data" for="works"> &copy2021 </label>
+		</div>
+
+
+	</div>
+</div>

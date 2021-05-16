@@ -1,0 +1,80 @@
+
+body{
+    background-color: #FBFBFB;
+}
+
+#parte_cima{
+    background-color:  rgb(240,244,244);
+}
+
+#parte_baixo{
+    background-color: #FBFBFB;
+}
+
+
+
+
+#tudo{
+    /*height:80%;
+    width:100%;*/
+    margin: auto;
+}
+
+
+#nome{
+  text-align:center;
+  font-family: 'Questrial';font-size: 28px;
+	font-size: 26px;
+  letter-spacing: 0.1em;
+  /*word-spacing: 0.3em;*/
+	color: black;
+	font-weight: bold;
+  margin:0
+}
+
+#subtitulo{
+  text-align:center;
+  font-family: 'Questrial';
+	font-size: 22px;
+  /*letter-spacing: 0.1em;*/
+	color: black;
+	/*font-weight: bold;*/
+  margin:0;
+}
+
+#texto {
+  font-family: 'Questrial';
+  font-size: 17px;
+  color: black;
+
+}
+
+
+#data {
+  font-family: 'Questrial';
+  font-size: 16px;
+  /*font-weight: bold;*/
+  color: black;
+  font-size:18px;
+}
+
+#link {
+  font-family: 'Questrial';
+  font-size: 16px;
+  /*font-weight: bold;*/
+  color: rgb(37, 150, 190);
+  font-size:18px;
+}
+
+
+#button{
+  color: rgb(37, 150, 190);
+  font-size:20px;
+  text-decoration: underline;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
